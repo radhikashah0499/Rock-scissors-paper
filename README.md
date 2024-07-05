@@ -8,15 +8,15 @@ This project is a web-based multiplayer Rock-Paper-Scissors game where multiple 
 
 - **User Authentication**: Players can enter unique usernames to identify themselves.
 - **Game Lobby**: Displays a list of available players and a "Play" button next to each available player to initiate a game.
-![Game Lobby](public/images/Lobby.png)
+![Game Lobby](./rock-paper-scissors/public/images/Lobby.png)
 - **Gameplay**: Implements the Rock-Paper-Scissors game logic:
   - Rock beats scissors
   - Scissors beats paper
   - Paper beats rock
   - Displays the choices of both players and the result (win, lose, or draw).
-  ![Game Play](public/images/Game.png)
+  ![Game Play](./rock-paper-scissors/public/images/Game.png)
 - **Leaderboard**: Shows the usernames and scores of all players and updates in real-time as scores change.
-![LeaderBoard](public/images/Leaderboard.png)
+![LeaderBoard](./rock-paper-scissors/public/images/Leaderboard.png)
 - **Waiting List**: Allows players to join a waiting list if two players are already playing and prompts the waiting player to start a game when one of the ongoing games finishes.
 - **Responsive Design**: Ensures the game works well on different screen sizes.
 
@@ -53,11 +53,10 @@ Shows the list of players in the waiting list who are waiting to join a game.
 ## Setup Instructions
 
 1. **Clone the repository**:
-git clone git@github.com:radhikashah0499/Rock-paper-scissors.git
-
+git clone https://github.com/radhikashah0499/Rock-scissors-paper.git
 
 2. **Navigate to the project directory**:
-cd Rock-paper-scissors
+cd Rock-scissors-paper/rock-paper-scissors
 
 
 3. **Install dependencies**:
