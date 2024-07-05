@@ -1,0 +1,165 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Lobby styles */
+.lobby {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lobby-form {
+    margin-bottom: 20px;
+}
+
+.lobby-player-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.lobby-player-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lobby-player-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.lobby-player-list li:last-child {
+    border-bottom: none;
+}
+
+.lobby-player-list li button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Game styles */
+.game {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.game-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.game-actions button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Leaderboard styles */
+.leaderboard {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.leaderboard th {
+    background-color: #f0f0f0;
+}
+
+/* Waiting List styles */
+.waiting-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.waiting-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.waiting-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.waiting-list li:last-child {
+    border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .lobby-player-list, .game, .leaderboard, .waiting-list {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .lobby-player-list, .game, .leaderboard, .waiting-list {
+        padding: 10px;
+    }
+}
